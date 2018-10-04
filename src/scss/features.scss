@@ -1,0 +1,125 @@
+.features{
+	padding: 60px 0;
+
+	.features-top{
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+
+		align-items: stretch;
+		overflow: hidden;
+		padding-top: 40px;
+
+		.features-item{
+			position: relative;
+			flex: 0 0 310px;
+		}
+
+		.most-popular{
+			position: absolute;
+			width: 310px;
+			height: 40px;
+			left: 0px;
+			top: -35px;
+			background: $light-blue;			
+			z-index: 1;
+			border-radius: 5px 5px 0 0;
+			text-align: center;
+
+			p{
+				color: $white;
+				text-transform: uppercase;
+				font-size: 0.9em;
+				margin: 0;
+				padding-top: 10px;
+			}
+
+			.best-value-p{
+				display: none;
+			}
+		}
+
+		.features-item-head{
+			position: relative;
+			z-index: 999;
+			height: 100px;			
+			border-radius: 5px 5px 0 0;			
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			h3{
+				font-size: 1.8em;
+				font-weight: bold;
+				text-transform: uppercase;
+			}
+		}		
+
+		.standart-head{
+			background: $light-grey;
+			border: 1px solid $light-grey;
+		}
+
+		.popular-head{
+			background: $blue;
+			border: 1px solid $blue;
+			position: relative;
+
+			h3{
+				color: $white;
+			}			
+		}
+
+		.features-item-body{
+			border-left: 1px solid $border;
+			border-right: 1px solid $border;
+			padding: 20px;
+			height: 100%;
+
+			ul{
+				list-style: none;
+				margin: 0;
+				padding: 0;
+
+				li{
+					padding: 15px;
+					border-bottom: 1px solid $border;
+				}
+
+				li:first-child{
+					background: $light-grey;
+					font-weight: bold;
+					border: none;
+				}
+
+				li:last-child{
+					border: none;
+				}
+			}
+		}
+
+		.features-item-foot{
+			display: none;
+		}
+	}
+
+	.features-bottom{
+		border: 1px solid $border;
+		border-radius: 0 0 5px 5px;
+		height: 75px;
+		background: $light-grey;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		a{
+			text-decoration: none;
+			display: block;
+			font-size: 1.1em;
+			font-weight: bold;
+			color: $blue;
+			padding: 5px 25px 5px 5px;
+			background: url('../img/feature-arrow.png') center right no-repeat;
+		}
+	}
+}

@@ -1,0 +1,296 @@
+@media (max-width: 980px) {
+	
+	/* main */
+
+	main{
+		width: 100%;
+		margin: 0;
+	}
+
+	/* end main */
+
+	/* header */
+
+	header{
+		height: 400px;
+	}
+
+	header h1{		
+		height: auto;
+		font-size: 2.5em;
+		padding-bottom: 100px;				
+	}
+
+	.button{		
+		padding: 10px 20px;		
+		font-size: 1em;		
+	}
+
+	.view-demo{
+		display: inline-block;
+	}
+
+	/* end header */
+
+	/* advantages */
+
+	.advantages{		
+		padding: 40px 0 0 0;
+		width: 293px;		
+		height: 352px;
+		overflow: hidden;
+		margin: 0 auto;
+	}
+
+	.advantages-head{
+		display: none;
+	}	
+
+	.advantages-item-wrap{
+		position: relative;
+		left: 0;
+		width: 879px;
+		transition: left 0.5s;
+	}
+
+	.advantages-item{		
+		width: 291px;
+		height: 350px;
+		border: 1px solid $border;	
+		margin: 0;	
+		float: left;	
+
+		.adv-mob-img{
+			display: block;
+		}
+
+		.adv-info-arrow{
+			display: none;
+		}
+
+		.adv-img{
+			display: none;
+		}
+
+		.adv-info-right{
+			display: none;
+		}
+
+		.adv-mob-img{
+			width: 291px;
+			height: 158px;
+			border-bottom: 1px solid $border;
+			position: relative;
+
+			.adv-mob-arrow{
+				position: absolute;
+				top: 151px;
+				left: 65px;
+				width: 21px;
+				height: 8px;
+				background: url('../img/adv-mob-arrow.png');
+			}
+		}
+
+		.adv1-mob{
+			background: url('../img/adv-mob-sprite.png') -4px 0 no-repeat;
+		}
+
+		.adv2-mob{
+			background: url('../img/adv-mob-sprite.png') -295px 0 no-repeat;
+		}
+
+		.adv3-mob{
+			background: url('../img/adv-mob-sprite.png') -585px 0 no-repeat;
+		}
+
+		.advantages-item-menu{
+			display: flex;
+			justify-content: center;
+			margin-top: 20px;
+
+			div{
+				cursor: pointer;
+				font-size: 0.9em;
+				font-weight: bold;
+				color: $blue;
+				flex: 1 1 auto;
+				text-align: center;
+				padding: 10px 0;
+				text-transform: uppercase;
+			}
+
+			.active{
+				color: $black;
+			}
+
+			div:first-child{
+				border-right: 1px solid $border;
+			}
+		}
+
+		.advantages-item-info{
+			display: block;
+
+			.adv-info-left, .adv-info-right{
+				padding: 0 15px;
+				text-align: left;
+			}
+		}
+	}	
+
+	.advantages-pag{
+		display: flex;
+		justify-content: center;
+		align-items: center;		
+		padding: 20px 0 0 0;
+
+		.adv-pag-item{
+			width: 13px;
+			height: 13px;
+			cursor: pointer;
+			margin: 0 5px;
+			background: url("../img/adv-pag-sprite.png") 0px 1px no-repeat;
+		}
+
+		.active{
+			background: url("../img/adv-pag-sprite.png") 0px -12px no-repeat;
+		}
+	}
+
+	/* end advantages */
+
+	/* features */
+	.features{
+		padding: 0 0 30px;
+
+		.features-top{			
+			justify-content: center;
+			align-items: center;
+			overflow: auto;	
+			padding-top: 20px;		
+
+			.features-item{
+				margin: 20px 90px;
+			}
+
+			.features-item:first-child{
+				margin-bottom: 50px;
+			}
+
+			.features-item-body{				
+				padding: 0 20px;
+				border: none;
+				height: auto;
+				color: $white;
+				background: $blue;
+
+				ul{		
+					list-style: disc;		
+
+					li{
+						padding: 0 15px 15px 0;
+						border: none;
+						margin-left: 15px;
+					}
+
+					li:first-child{
+						display: none;
+					}
+					
+				}
+
+				ul:last-child{
+					border-bottom: 1px solid $light-blue;
+				}
+			}
+
+			.most-popular{
+				.best-value-p{
+					display: block;
+				}
+				.most-popular-p{
+					display: none;
+				}
+			}
+
+			.features-item-head{				
+				height: 90px;				
+			}		
+
+			.standart-head{
+				background: $blue;
+				border: none;
+				color: $white;
+
+				h3{
+					text-align: center;
+					width: 280px;
+					padding-bottom: 10px;
+					margin: 0;
+					border-bottom: 1px solid $light-blue;
+				}
+			}
+
+			.popular-head{
+				background: $blue;
+				border: 1px solid $blue;
+				position: relative;
+
+				h3{
+					text-align: center;
+					width: 280px;
+					padding-bottom: 10px;
+					margin: 0;
+					border-bottom: 1px solid $light-blue;
+				}			
+			}
+
+			.features-item-foot{	
+				display: flex;			
+				background: $blue;
+				justify-content: center;				
+				border-radius: 0 0 5px 5px;
+
+				.features-item-trigger{
+					height: 40px;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+
+					p{
+						color: $white;
+						cursor: pointer;
+						text-transform: uppercase;
+						font-size: 0.9em;
+						display: none;
+					}
+					
+					img{
+						cursor: pointer;
+						width: 8px;
+						height: 5px;
+						display: block;
+						margin: 0 5px;
+					}
+				}				
+			}
+
+		}
+		
+		.features-bottom{
+			display: none;
+		}
+	}
+
+	/* end features */
+
+}
+
+@media (max-width: 500px) {
+
+	header h1{				
+		font-size: 2em;					
+	}
+
+}

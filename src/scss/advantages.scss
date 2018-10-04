@@ -1,0 +1,88 @@
+.advantages{
+	padding: 90px 0 30px 0;
+}
+
+.advantages-head{
+	display: flex;
+	justify-content: center;
+
+	div{		
+		font-size: 2.3em;
+		font-weight: 300;
+		color: $blue;
+		flex: 1 1 auto;
+		text-align: center;
+		padding: 10px 0;
+	}
+
+	div:first-child{
+		border-right: 1px solid $border;
+	}
+}
+
+.advantages-item{
+	border-top: 1px solid $border;	
+	margin: 15px 0 25px 0;
+
+	.adv-img{
+		width: 732px;		
+		margin: 70px auto;
+	}
+
+	.adv1{
+		height: 186px;
+		background: url('../img/adv-sprite.png') 0 0 no-repeat;
+	}
+
+	.adv2{
+		height: 164px;
+		background: url('../img/adv-sprite.png') 0 -186px no-repeat;
+	}
+
+	.adv3{
+		height: 195px;
+		background: url('../img/adv-sprite.png') 0 -350px no-repeat;
+	}	
+
+	.advantages-item-info{
+		display: flex;
+		color: $grey;
+		align-items: center;
+		font-size: 1.1em;
+		font-weight: 300;
+
+		.adv-info-left{
+			flex: 1 1 auto;
+			padding: 0 125px;
+			text-align: center;
+		}
+
+		.adv-info-right{
+			flex: 1 1 auto;
+			padding: 0 125px;
+			text-align: center;
+		}
+
+		.adv-info-arrow{
+			flex: 0 0 40px;
+			height: 40px;
+			background: url('../img/adv-arrow.png') top center no-repeat;
+		}
+	}
+
+	/* mobile */
+
+	.adv-mob-img{
+		display: none;
+	}
+
+	.advantages-item-menu{
+		display: none;
+	}
+
+	.advantages-pag{
+		display: none;
+	}
+
+	/* end mobile */
+}

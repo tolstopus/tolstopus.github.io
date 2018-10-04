@@ -1,0 +1,45 @@
+header{
+	height: 100vh;
+	margin: 0;
+	background: url('../img/header.jpg');
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header h1{
+	margin: 0;
+	color: $white;
+	font-size: 3.7em;
+	text-align: center;
+	padding: 50px;
+	font-weight: bold;
+	height: 70vh;
+}
+
+.header-buttons{	
+	display: flex;
+	justify-content: center;
+}
+
+.button{
+	display: inline-block;
+	padding: 20px 80px;
+	border-radius: 5px;
+	color: $white;	
+	text-decoration: none;
+	font-size: 1.4em;
+	margin: 0 10px;
+}
+
+.orange{
+	background: $orange
+}
+
+.blue{
+	background: $blue;
+}
+
+.view-demo{
+	display: none;
+}
